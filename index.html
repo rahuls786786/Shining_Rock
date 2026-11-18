@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shining Rock | Learn • Practice • Grow</title>
+<meta name="description" content="Online programming and technical training courses from Shining Rock.">
+<style>
+:root{--navy:#082653;--blue:#1263d6;--gold:#f6b51b;--ink:#13233f;--muted:#5e6b80;--pale:#eef5ff;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#f7f9fd;line-height:1.6}
+header{position:sticky;top:0;z-index:10;background:var(--navy);color:#fff;box-shadow:0 3px 15px #061a3b35}
+.nav{max-width:1160px;margin:auto;padding:14px 22px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{font-size:25px;font-weight:800;letter-spacing:.2px}.brand span{color:var(--gold)}
+nav{display:flex;gap:8px;flex-wrap:wrap}nav a{color:#fff;text-decoration:none;padding:9px 12px;border-radius:9px;font-weight:700}nav a:hover,nav a.active{background:var(--blue)}
+.hero{background:linear-gradient(115deg,#092653ee,#125bb9d9),radial-gradient(circle at 80% 20%,#f6b51b55,transparent 35%);color:white;text-align:center;padding:78px 20px 72px}
+.hero .eyebrow{color:#ffd66e;text-transform:uppercase;letter-spacing:3px;font-weight:700}.hero h1{font-size:clamp(38px,7vw,70px);line-height:1.05;margin:12px 0}.hero h1 span{color:#ffd05a}.hero p{font-size:clamp(17px,2.5vw,22px);max-width:720px;margin:18px auto 28px;color:#e8f1ff}
+.btn{display:inline-block;background:var(--gold);color:#10264a;text-decoration:none;border:0;padding:12px 20px;border-radius:10px;font-weight:800;cursor:pointer}.btn.blue{background:var(--blue);color:white}.btn.outline{background:transparent;border:2px solid #fff;color:white}
+.container{max-width:1160px;margin:auto;padding:54px 22px}.section-title{text-align:center;font-size:34px;margin:0 0 8px;color:var(--navy)}.section-sub{text-align:center;color:var(--muted);margin:0 auto 30px;max-width:680px}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}.card{background:#fff;border:1px solid #d9e5f7;border-radius:18px;padding:26px;box-shadow:0 8px 24px #0b326b0c}.card-top{display:flex;align-items:center;gap:18px}.symbol{width:76px;height:76px;flex:0 0 76px;border-radius:18px;background:linear-gradient(135deg,#dceaff,#a8ccff);display:grid;place-items:center;color:#0753b8;font-size:34px;font-weight:900}.card h3{font-size:27px;margin:0;color:var(--navy)}.card p{color:var(--muted)}.card ul{padding-left:20px;color:#354762}.price-row{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;border-top:1px solid #e5ebf4;padding-top:18px;margin-top:18px}.price{font-size:28px;font-weight:900;color:var(--navy)}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}.feature{background:#fff;border-radius:14px;padding:20px;text-align:center;border:1px solid #e0e9f7}.feature b{display:block;color:var(--navy);font-size:18px}.feature span{font-size:14px;color:var(--muted)}
+.page{display:none}.page.active{display:block}.content-panel{max-width:850px;margin:auto;background:white;border:1px solid #e0e8f3;border-radius:16px;padding:28px;box-shadow:0 8px 24px #0b326b0c}.content-panel h2{color:var(--navy)}.notice{background:#fff7df;border-left:4px solid var(--gold);padding:14px 16px;border-radius:8px;color:#634b0d}
+footer{background:#061d40;color:#e8f1ff;padding:28px 20px;text-align:center}footer a{color:#ffd66e;text-decoration:none;margin:0 8px}.small{font-size:13px;color:#b9c8dd}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.contact-box{background:#f3f7ff;padding:18px;border-radius:12px}
+@media(max-width:720px){.nav{align-items:flex-start;flex-direction:column}.cards,.features,.contact-grid{grid-template-columns:1fr}.hero{padding:58px 18px}.card-top{align-items:flex-start}.container{padding:40px 16px}}
+</style>
+</head>
+<body>
+<header><div class="nav"><div class="brand">◆ Shining <span>Rock</span></div>
+<nav aria-label="Main navigation">
+<a href="#home" data-page="home" class="active">Home</a><a href="#courses" data-page="courses">Courses</a><a href="#about" data-page="about">About</a><a href="#contact" data-page="contact">Contact</a>
+</nav></div></header>
+<main>
+<section id="home" class="page active">
+<div class="hero"><div class="eyebrow">Online learning • Practical skills</div><h1>Welcome to<br><span>Shining Rock</span></h1><p>Learn. Practice. Grow. Build your programming skills with structured, practical courses.</p><a class="btn" href="#courses">Explore Courses</a> <a class="btn outline" href="#about">Know About Us</a></div>
+<div class="container"><h2 class="section-title">Our Courses</h2><p class="section-sub">Choose a course and take the next step in your learning journey.</p>
+<div class="cards">
+<article class="card"><div class="card-top"><div class="symbol">C</div><div><h3>Embedded C</h3><b>Build skills for embedded systems</b></div></div><p>Learn the fundamentals of Embedded C and how C is used in microcontrollers and embedded applications.</p><ul><li>Programming fundamentals</li><li>Embedded C concepts</li><li>Practical examples and exercises</li></ul><div class="price-row"><div class="price">₹1,000</div><a class="btn blue enroll" href="#contact" data-course="Embedded C">Enroll Now</a></div></article>
+<article class="card"><div class="card-top"><div class="symbol">C++</div><div><h3>C++</h3><b>Master object-oriented programming</b></div></div><p>Learn C++ step by step, from core language concepts to object-oriented programming.</p><ul><li>C++ fundamentals</li><li>Classes and OOP concepts</li><li>STL, examples and practice</li></ul><div class="price-row"><div class="price">₹2,000</div><a class="btn blue enroll" href="#contact" data-course="C++">Enroll Now</a></div></article>
+</div>
+<div class="features"><div class="feature">✓ <b>Beginner Friendly</b><span>Learn step by step</span></div><div class="feature">✓ <b>Practical Learning</b><span>Examples and exercises</span></div><div class="feature">✓ <b>Course Support</b><span>Contact us for details</span></div></div>
+</div></section>
+<section id="courses" class="page"><div class="container"><h2 class="section-title">Our Courses & Fees</h2><p class="section-sub">Course details and listed prices.</p><div class="cards">
+<article class="card"><h3>Embedded C</h3><p>Beginner-friendly training in C programming for embedded applications.</p><ul><li>Core C concepts</li><li>Embedded programming basics</li><li>Practice exercises</li></ul><div class="price">₹1,000</div><a class="btn blue enroll" href="#contact" data-course="Embedded C">Enquire / Enroll</a></article>
+<article class="card"><h3>C++</h3><p>Structured introduction to C++ and object-oriented programming.</p><ul><li>Core C++ concepts</li><li>Classes and objects</li><li>STL fundamentals</li></ul><div class="price">₹2,000</div><a class="btn blue enroll" href="#contact" data-course="C++">Enquire / Enroll</a></article>
+</div></div></section>
+<section id="about" class="page"><div class="container"><div class="content-panel"><h2>About Shining Rock</h2><p>Shining Rock is an online learning initiative focused on programming and technical education. Our aim is to help learners build practical knowledge through structured lessons and examples.</p><p>Courses currently listed: Embedded C and C++.</p><div class="notice"><b>Before publishing:</b> Please make sure this description accurately reflects the training you actually provide. Add instructor details and course delivery information where applicable.</div></div></div></section>
+<section id="contact" class="page"><div class="container"><div class="content-panel"><h2>Contact Us</h2><p>For course information, enrollment, or support, contact Shining Rock.</p><div class="contact-grid"><div class="contact-box"><b>Email</b><p>[Add your business email]</p></div><div class="contact-box"><b>Phone</b><p>[Add your business phone number]</p></div></div><p class="notice">This is a preview template. Replace the bracketed contact details with your real details before publishing or submitting for KYC.</p><h3>Enrollment enquiry</h3><p>Send your name, selected course, and contact details to the business contact above. Do not send UPI PIN, OTP, card PIN, or passwords.</p></div></div></section>
+<section id="privacy" class="page"><div class="container"><div class="content-panel"><h2>Privacy Policy</h2><p>Shining Rock may collect information you provide when you contact us or enquire about a course, such as your name, email address, and phone number. We use it to respond to enquiries, manage enrollment, and provide course-related support.</p><p>We do not ask you to share UPI PINs, OTPs, or banking passwords. Payment information should be entered only on the authorized payment provider's secure page.</p><p>For privacy questions, contact: [Add your business email].</p><p class="small">Review and customize this policy to match your actual data practices before publishing.</p></div></div></section>
+<section id="terms" class="page"><div class="container"><div class="content-panel"><h2>Terms & Conditions</h2><p>Course content, fees, duration, delivery method, access period, and support details should be clearly communicated to the learner before payment.</p><p>Enrollment is confirmed only after payment is successfully verified. Course access and permitted use are subject to the course details communicated at purchase.</p><p>For questions, contact: [Add your business email].</p><p class="small">Customize these terms to reflect your real course delivery and policies.</p></div></div></section>
+<section id="refund" class="page"><div class="container"><div class="content-panel"><h2>Refund & Cancellation Policy</h2><p>Please review the course description and fee before enrolling. For cancellation or refund requests, contact [Add your business email] with your order details.</p><p>Refund eligibility, timelines, and any applicable conditions must be stated clearly before accepting payments. Do not publish this sample wording until you have decided and verified your actual refund policy.</p></div></div></section>
+</main>
+<footer><div><b>Shining Rock</b> — Learn • Practice • Grow</div><p><a href="#privacy">Privacy Policy</a><a href="#terms">Terms & Conditions</a><a href="#refund">Refund Policy</a></p><div class="small">© 2026 Shining Rock. All rights reserved.</div></footer>
+<script>
+function showPage(id){const valid=['home','courses','about','contact','privacy','terms','refund'];if(!valid.includes(id))id='home';document.querySelectorAll('.page').forEach(p=>p.classList.toggle('active',p.id===id));document.querySelectorAll('nav a').forEach(a=>a.classList.toggle('active',a.dataset.page===id));window.scrollTo({top:0,behavior:'smooth'});}
+function route(){showPage(location.hash.slice(1)||'home')}
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const id=a.getAttribute('href').slice(1);if(['home','courses','about','contact','privacy','terms','refund'].includes(id)){e.preventDefault();history.pushState(null,'','#'+id);showPage(id)} }));
+document.querySelectorAll('.enroll').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();const course=a.dataset.course;alert(course+' selected. Payment link is not connected yet. Add your verified Razorpay Payment Link before accepting payments.');history.pushState(null,'','#contact');showPage('contact')}));
+window.addEventListener('popstate',route);route();
+</script>
+</body></html>
